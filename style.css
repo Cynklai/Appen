@@ -1,0 +1,421 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1em;
+}
+
+.icons {
+    background-color: black;
+    height: 2.3em;
+    font-size: 1.5em;
+    padding-top: 0.2em;
+    padding-left: 47em;
+    display: flex;
+    gap: 0.3em;
+}
+
+.icons a {
+    color: #d1d4d6;
+    display: flex;
+    justify-content: center;
+    padding-top: 0.6em;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.icon1 {
+    background-color: #24282c;
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 20em;
+    margin-top: 0.2em;
+}
+
+.icons .icon1 a:hover {
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+} 
+
+.menu {
+    display: flex;
+    gap: 2em;
+    padding-top: 0.7em;
+}
+
+.menu li a {
+    color: black;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.menu li a:hover {
+    color: #ef4126;
+    transition: all 0.2s ease-in-out;
+}
+
+/* navbar is responsive */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* hamburger starts */
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    color: black;
+}
+
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    height: 6em;
+    border-radius: 15px;
+    top: 1.5em;
+}
+
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.buttons {
+    margin-right: 3em;
+    display: flex;
+    gap: 0.5em;
+}
+
+.buttons button {
+    width: 6em;
+    height: 3em;
+    cursor: pointer;
+}
+
+.buttons button {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.buttons-1 {
+    margin-top: 1.1em;
+    margin-right: 3em;
+    display: flex;
+    gap: 0.5em;
+    display: none;
+}
+
+.buttons-1 button {
+    width: 6em;
+    height: 3em;
+    cursor: pointer;
+}
+
+.buttons-1 button {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.apply{
+    background-color: black;
+    border: black;
+    color: #ffffff;
+}
+
+.apply:hover {
+    background-color: #ffffff;
+    border:1px solid black;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.login {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid black;
+}
+
+.login:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;   
+}
+
+.header {
+    display: flex;
+    gap: 5em;
+}
+
+.first {
+    padding-top: 7em;
+    padding-left: 5em;
+}
+
+.first h1 {
+    font-size: 60px;
+}
+
+.first p {
+    font-size: 22px;
+    padding-top: 1em;
+    color: #6f6f6f;
+}
+
+.image img {
+    width: 30em;
+    margin-top: 3em;
+}
+
+.button {
+    display: flex;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.button button {
+    width: 10.5em;
+    height: 3em;
+    font-size: 15px;
+}
+
+.button .now {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+
+.button .now:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+    transition: all 0.3s ease-in-out;   
+}
+
+.button .how {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.button .how:hover {
+    background-color: #000000;
+    border: 1px solid #000000;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;   
+}
+
+.mid {
+    background-color: #003b49;
+    display: flex;
+    align-items: center;
+    height: 15em;
+    justify-content: space-around;
+}
+
+.mid-text h2 {
+    color: #ffffff;
+    font-size: 2.6em;
+}
+
+.mid-text h2 span {
+    color: #ef4126;
+}
+
+.mid-text p {
+    color: #ffffff;
+    font-size: 1.3em;
+    padding-top: 1em;
+}
+
+.mid button {
+    width: 10em;
+    height: 3em;
+    font-size: 16px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.mid button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.fair {
+    background-color: #eef1f2;
+    display: grid;
+    grid-template-columns: 42em 22em;
+    padding-left: 5em;
+    row-gap: 5em;
+    padding-top: 7em;
+    height: 38em;
+}
+
+.flex {
+    display: flex;
+    gap: 2em;
+}
+
+.fair .work h2 {
+    color: #ef4126;
+    font-size: 23px;
+    font-weight: 530;
+}
+
+.fair .work p {
+    width: 27em;
+    padding-top: 1.5em;
+    font-size: 16px;
+    font-weight: 400;
+    color: #24282c;
+}
+
+.brand {
+    padding-top: 5em;
+    padding-left: 7em;
+    height: 60em;
+}
+
+.brand h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.brand .p {
+    width: 43em;
+    font-size: 18px;
+    padding-top: 2em;
+    color: #24282c;
+}
+
+.flexibility {
+    display: flex;
+    gap: 10em;
+    padding-left: 5em;
+    padding-top: 5em;
+}
+
+.flexibility div img {
+    width: 7em;
+}
+
+.flexibility p {
+    font-size: 16px;
+    padding-top: 2em;
+    width: 51em;
+    color: #24282c;
+}
+
+hr {
+    margin-top: 2em;
+    width: 73em;
+}
+
+.impact {
+    display: flex;
+    gap: 5em;
+    padding-top: 5em;
+}
+
+.impact img {
+    width: 16em;
+}
+
+.impact p {
+    font-size: 15px;
+    width: 55em;
+    color: #24282c;
+}
+
+footer {
+    background-color: #020202;
+    /* background-color: #003b49; */
+    /* height: 33em; */
+}
+
+.bf-end {
+    display: flex;
+    /* gap: 15em; */
+    justify-content: space-evenly;
+    padding-top: 3em;
+    /* padding-left: 10em; */
+}
+
+.bf-end div img {
+    margin-top: 3em;
+    width: 13em;
+}
+
+.quick-links {
+    display: grid;
+    gap: 1em;
+}
+
+.quick-links h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.quick-links a {
+    color: #6f6f6f;
+}
+
+.quick-links a:hover{
+    color: #ffffff;
+}
+
+.follow2 {
+    display: flex;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+.follow h2 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.follow a {
+    color: #6f6f6f;
+    font-size: 20px;
+}
+
+.follow a:hover{
+    color: #ffffff;
+}
+
+.end {
+    padding-top: 2em;
+}
+
+.end p {
+    color: gray;
+    padding-top: 5em;
+    text-align: center;
+}
